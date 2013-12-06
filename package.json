@@ -1,6 +1,7 @@
 {
   "name": "passport-oauth",
-  "version": "1.0.0",
+  "version": "1.0.0c",
+  "private": true,
   "description": "OAuth 1.0 and 2.0 authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -33,7 +34,8 @@
   "main": "./lib",
   "dependencies": {
     "passport-oauth1": "1.x.x",
-    "passport-oauth2": "1.x.x"
+    "passport-oauth2": "git://github.com/troupe/passport-oauth2.git#v1.1.1c"
+
   },
   "devDependencies": {
     "mocha": "1.x.x",
