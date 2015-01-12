@@ -1,7 +1,6 @@
 {
-  "name": "passport-oauth",
+  "name": "gitter-passport-oauth",
   "version": "1.0.0d",
-  "private": true,
   "description": "OAuth 1.0 and 2.0 authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -33,16 +32,17 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "passport-oauth1": "1.x.x",
-    "passport-oauth2": "git://github.com/troupe/passport-oauth2.git#v1.1.1d"
-
+    "gitter-passport-oauth2": "^1.1.2-a",
+    "passport-oauth1": "1.x.x"
   },
   "devDependencies": {
     "mocha": "1.x.x",
     "chai": "1.x.x",
     "chai-passport-strategy": "0.1.x"
   },
-  "engines": { "node": ">= 0.4.0" },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
   },
@@ -50,11 +50,14 @@
     "browsers": [
       "chrome/latest"
     ],
-    "harness" : "mocha",
+    "harness": "mocha",
     "files": [
       "test/bootstrap/testling.js",
       "test/*.test.js",
       "test/**/*.test.js"
     ]
+  },
+  "publishConfig": {
+    "registry": "http://beta-internal:8089/nexus/content/repositories/gitter-private/"
   }
 }
