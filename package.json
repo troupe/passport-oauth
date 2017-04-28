@@ -1,5 +1,5 @@
 {
-  "name": "gitter-passport-oauth",
+  "name": "@gitterhq/passport-oauth",
   "version": "1.0.0-f",
   "description": "OAuth 1.0 and 2.0 authentication strategies for Passport.",
   "keywords": [
@@ -32,7 +32,7 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "gitter-passport-oauth2": "^1.1.2-b",
+    "@gitterhq/passport-oauth2": "^1.1.2-b",
     "passport-oauth1": "1.x.x"
   },
   "devDependencies": {
